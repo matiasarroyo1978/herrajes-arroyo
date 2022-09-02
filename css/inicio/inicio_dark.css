@@ -1,0 +1,29 @@
+.dark .container__all .container__info .h1-ferreteria{
+    color: #ffffff;
+}
+
+.dark .container__all .container__info .p-descripcion{
+    color: #ffffff;
+}
+
+.dark .container__all .contenido-tarjetas h1{
+    color: #fe950b;
+}
+
+.dark .container__all .contenido-tarjetas .card{
+    background: rgba(0, 0, 0, 0.425);
+    box-shadow: 7px 1px 7px 7px #ffffff11;
+}
+
+.dark .container__all .contenido-tarjetas .card .contenido-card h3{
+    color: #fe950b;
+}
+
+.dark .container__all .contenido-tarjetas .card .contenido-card p{
+    color: white;
+}
+
+.dark .container__all .contenido-tarjetas .card .contenido-card a:hover{
+    color: black;
+    font-size: 17px;
+}

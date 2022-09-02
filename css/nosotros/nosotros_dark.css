@@ -1,0 +1,17 @@
+.dark .blog-post{
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 10px .5px rgba(124, 113, 113, 0.199);
+}
+
+.dark .blog-post__info .blog-post__date{
+    color: rgba(255, 255, 255, 0.707);
+}
+
+.dark .blog-post__info .blog-post__text{
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.dark .blog-post-img::before{
+    background: linear-gradient(to right, #717f91a9, #7a8b9c71);
+    box-shadow: .5rem .5rem 3rem 10px rgba(53, 41, 41, 0.637);
+}

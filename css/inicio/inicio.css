@@ -1,0 +1,304 @@
+@import url("../general/menu.css");
+
+.container__all{
+    position: relative;
+    right: 0;
+    transition: all 300ms;
+    cursor: default;
+}
+.cover{
+    width: 100%;
+    padding-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+}
+
+.container__cover{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    background-size: cover;
+    background-position: bottom;
+}
+
+.cover .container__info{
+    max-width: 500px;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.cover .h1-ferreteria{
+    max-width: 500px;
+    font-size: 50px;
+    font-weight: 900;
+    color: #373737;
+    text-align: center;
+}
+
+.cover .h2-huarmaca{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #FEBA0B;
+    margin-top: -5px;
+}
+.cover .h2-huarmaca1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #FEBA0B;
+    margin-top: 5px;
+}
+.cover .p-descripcion{
+    text-align: justify;
+    margin-top: 10px;
+    color: #373737;
+}
+/***************************************/
+
+.container__vector{
+    width: 95%;
+    margin: 10px 0 0 100px;
+    overflow: hidden;
+}
+
+.container__vector img{
+    width: 100%;
+}
+/***********************************************************/
+/*TARJETAS*/
+.contenido-tarjetas h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 25px;
+    font-weight: 900;
+    
+}
+
+.container_card{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+.carrito h4{
+    text-align: center;
+    border-bottom: solid 1px red;
+  }
+  .carrito .lista-carrito{
+    display: grid;
+    align-items: center;
+    border-bottom: solid 1px red;
+}
+.nav_menu p{
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: #fff;
+    padding: 1px 6px;
+    border-radius: 100%;
+    color: #fe950b;
+    font-weight: 600;
+    font-family: system-ui;
+    line-height: 14px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card figure img{
+    display: block;
+    margin: auto;
+    width: 220px;
+    height: 170px;
+}
+
+
+.card .contenido-card{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido-card p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido-card h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido-card a{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4ff;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    text-decoration: none;
+}
+
+.card .contenido-card a:hover{
+    background: #2fb4cc;
+    color: white;
+}
+
+
+.footer-column ul li a{
+    margin: 0 -30px;
+}
+img.btn-whatsapp {
+	display: block !important;
+	position: fixed;
+	z-index: 9999999;
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+	border-radius:100px !important;
+	}
+	img.btn-whatsapp:hover{
+	border-radius:100px !important;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+	-moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+	box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+	transition-duration: 1s;
+	} 
+/*RESPONSIVE*/
+@media screen and (max-width: 1100px){
+    .container__info{
+        margin: auto;
+    }
+
+    .container__cover{
+        margin: auto;
+        display: block;
+    }
+    .container__vector{
+        padding: 10px;
+        margin:  auto;
+        width: 40%
+    }
+}
+
+
+@media screen and (max-width: 960px){
+    .container__info{
+        margin: auto;
+        max-width: 700px;
+    }
+
+    .container__vector{
+        margin: auto;
+        width: 70%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container_card{
+        display: table;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card figure img{
+        display: flex;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .container__vector{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container__vector{
+        display: none;
+    }
+
+    .container__info{
+        margin: auto;
+    }
+
+    .container__info .h1-ferreteria{
+        font-size: 30px;
+    }
+
+    .container__info .h2-huarmaca{
+        margin: 2px 0;
+        font-size: 30px;
+    }
+
+    .container_card{
+        display: table;
+        width: 50px;;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .container__cover{
+        width: 130%;
+    }
+
+    .container__info{
+        margin-left: 30px;
+    }
+
+    .container__vector{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .contenido-tarjetas{
+        margin:  0 100px 0 0;
+    }
+
+    .contenido-tarjetas h1{
+        font-size: 18px;
+        margin: auto 15px;
+        text-align: center;
+    }
+
+    .card{
+        width: 200%;
+    }
+
+    .card figure img{
+        width: 100%;
+    }
+
+    .card .contenido-card p{
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .contenido-tarjetas{
+        margin:  0 100px 0 0;
+    }
+}

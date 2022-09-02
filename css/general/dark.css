@@ -1,0 +1,50 @@
+@import url("../inicio/inicio_dark.css");
+@import url("../nosotros/nosotros_dark.css");
+
+#modo{
+    font-size: 40px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.dark #modo{
+    color: rgb(255, 123, 0);
+}
+
+.dark{
+    background: rgba(14, 13, 13, 0.815);
+    transition: all .5s ease-in-out;
+}
+
+.dark header{
+    background: rgba(14, 13, 13, 0);
+}
+
+.dark .nav_mod{
+    background: #202020;
+    box-shadow: 10px 1px 10px 10px #ffffff11;
+}
+
+.dark header .logo-chuqui{
+    color: white;
+}
+
+.dark header .nav_menu .container_menu .texto_menu a{
+    color: #fff;
+    font-weight: 500;
+}
+
+.dark .btn__menu{
+    background: #f5f5f5;
+}
+
+@media screen and (max-width: 800px){
+    .dark .nav_menu{
+        background: #3a3939;
+        box-shadow: 1px 10px 10px 20px #ffffff11;
+    }
+
+    .dark .nav_menu .texto-menu{
+        left: 100px;
+    }
+}
