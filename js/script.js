@@ -20,8 +20,8 @@ nav = document.getElementById("nav");
 
 function mostrar_menu(){
     //Nota: si solo quieres mostrar el menú por encima, solo comenta las lineas de menú y body.
-   // menu.classList.toggle('move_content');
-    //body.classList.toggle('move_content');
+    menu.classList.toggle('move_content');
+    body.classList.toggle('move_content');
     nav.classList.toggle('move_nav');
 }
 
