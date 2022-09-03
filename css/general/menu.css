@@ -138,7 +138,7 @@ header .logo{
     border-radius: 10px;
     color: white;
 } */
-/* .select{
+.select{
     font-size: 20px;
     border: 2px solid #359EF9;
     font-weight: 700;
@@ -156,9 +156,9 @@ header .logo{
 
 .nav_mod{
     height: 80px;
-    box-shadow: 10px 1px 10px 10px #00000010;
+    box-shadow: 10px 1px 10px 10px #5f5e5e10;
     background: rgb(214, 211, 211);
-} */
+} 
 
 .btn__menu{
     width: 50px;
