@@ -132,6 +132,7 @@
         allContainerCart.addEventListener('click', addProduct);
     
         containerBuyCart.addEventListener('click', deleteProduct);
+        vaciarCarrito.addEventListener('click', borrarCarrito);
     }
     function addProduct(e){
         e.preventDefault();
@@ -215,7 +216,16 @@
             console.log(totalCard);
 
         });
-    }
+    }   
     function clearHtml(){
         containerBuyCart.innerHTML = '';
+        }
+    
+    function borrarCarrito(){
+        buyThings = [];
+        clearHtml();
+        totalCard = 0;
+        countProduct = 0;
+        priceTotal.innerHTML = totalCard;
+        amountProduct.innerHTML = countProduct;
     }
