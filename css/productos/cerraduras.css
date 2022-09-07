@@ -93,9 +93,13 @@ p.author a {
     height: 400px;
   }
   .card-body {
-    padding: 30px 20px;
     text-align: center;
+    padding: 30px 20px;
     font-size: 18px;
+  }
+  .card-body img{
+    width: 300px;
+    height: 400px;
   }
   .card .contenido-card{
     padding: 15px;
