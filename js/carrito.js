@@ -556,26 +556,26 @@ document.addEventListener('DOMContentLoaded', () => {
         priceTotal.innerHTML = totalCard;
     }
 
-    function guardarCarritoEnLocalStorage () {
-        miLocalStorage.setItem('carrito', JSON.stringify(carrito));
-    }
+    // function guardarCarritoEnLocalStorage () {
+    //     miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+    // }
 
-    function cargarCarritoDeLocalStorage () {
-        // ¿Existe un carrito previo guardado en LocalStorage?
-        if (miLocalStorage.getItem('carrito') !== null) {
-            // Carga la información
-            carrito = JSON.parse(miLocalStorage.getItem('carrito'));
-            loadHtml();
-            priceTotal.innerHTML = totalCard;
-            amountProduct.innerHTML = countProduct;
-        }
-    }
+    // function cargarCarritoDeLocalStorage () {
+    //     // ¿Existe un carrito previo guardado en LocalStorage?
+    //     if (miLocalStorage.getItem('carrito') !== null) {
+    //         // Carga la información
+    //         carrito = JSON.parse(miLocalStorage.getItem('carrito'));
+    //         loadHtml();
+    //         priceTotal.innerHTML = totalCard;
+    //         amountProduct.innerHTML = countProduct;
+    //     }
+    // }
 
     // Eventos
     DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
     // Inicio
-    cargarCarritoDeLocalStorage();
+    //cargarCarritoDeLocalStorage();
     renderizarProductos();
   
     
