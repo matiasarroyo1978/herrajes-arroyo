@@ -31,21 +31,15 @@
                     <ul class="container_menu">
                         <li class="submenu">
                             <a href="#" id="cart"><i class="fas fa-solid fa-shopping-cart"></i></a>
-                            <div id="carrito">                              
-                                <table id="lista-carrito" class="u-full-width">
-                                    <thead>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Precio</th>
-                                            <th>Cantidad</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>   
-                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                                <a href="#" id="finalizar-compra" class="button u-full-width">Finalizar Compra</a>
+                            <p id="count-product">0</p>
+                            <div class="carrito" id="carrito">
+                                <h4>Mi Carrito</h4>
+                                    <div class="lista-carrito"></div>
+                                    <h4>Total:$ <strong id="price-total">0</strong></h4>
+                                    <a href="#" class="btn-danger button u-full-width">Vaciar Carrito</a>
+                                    <a href="#" class="button finalizar-compra u-full-width">Finalizar Compra</a>
                             </div>
+                        </li>
                         </li>
                         <li class="texto_menu"><a href="../html/productos.html" class="select">Productos</a></li>
                         <li class="texto_menu"><a href="../html/contactanos.html">Contáctanos</a></li>
@@ -64,9 +58,9 @@
         <div class="cover">
             <div class="contenido-card">
                 <div class="heading">
-                    <h1>Herrajes Roma</h1>
+                    <h1>Corredizos</h1>
                 </div>
-                <div class="row">
+                <div id="productos" class="row">
                     <div class="card">
                         <div class="card-header">
                             <img src="../images/JPG/corredizo-curvo.webp" alt="">
@@ -198,7 +192,7 @@
                             </p>
                             <a href="#" class="btn">Agregar al Carrito</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -326,6 +320,7 @@
     
     <!------------------------JavaScript---------------------------->
     <script src="../js/script.js"></script>
+    <script src="../js/carrito.js"></script>
     <script src="../js/dark.js"></script>
     <script src="../boostrap/js/bootstrap.bundle.min.js"></script>
 </body>

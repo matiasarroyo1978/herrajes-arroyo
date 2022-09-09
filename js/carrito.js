@@ -218,16 +218,185 @@ document.addEventListener('DOMContentLoaded', () => {
             cantidad : 0,
         },
     ];       
-
+    let corredizos = [
+        {
+            id: 25,
+            nombre: 'Herraje Corredizo Curvo',
+            imagen:'../images/JPG/corredizo-curvo.webp',
+            descripcion: 'KIT CORREDIZO CURVO PARA PORTON 4 HOJAS DE MADERA.',
+            precio: 65000,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 26,
+            nombre: 'Herraje Corredizo Curvo',
+            imagen:'../images/JPG/curvo-herrero.jpg',
+            descripcion: 'KIT CORREDIZO CURVO PARA PORTON 4 HOJAS DE HIERRO.',
+            precio: 60000,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 27,
+            nombre: 'Estabilizador Dobñe',
+            imagen:'../images/JPG/estabilizador.png',
+            descripcion: 'ESTABILIZADOR DOBLE PARA PORTONES CORREDIZOS RECTOS.',
+            precio: 4500,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 28,
+            nombre: 'Estabilizador Simple',
+            imagen:'../images/JPG/estabilizador-simple.png',
+            descripcion: 'ESTABILIZADOR SIMPLE PARA PORTONES CORREDIZOS RECTOS.',
+            precio: 2500,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 29,
+            nombre: 'Rueda con Soporte',
+            imagen:'../images/JPG/Rueda-con-soportE.png',
+            descripcion: 'RUEDA CON SOPORTE PARA PORTONES CORREDIZOS CON CANAL PARA HIERRO ÁNGULO.',
+            precio: 2300,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 30,
+            nombre: 'Rueda con Perno',
+            imagen:'../images/JPG/Rueda-con-perno.png',
+            descripcion: 'RUEDA CON PERNO PARA PORTONES CORREDIZOS CON CANAL PARA HIERRO ÁNGULO.',
+            precio: 2300,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 31,
+            nombre: 'Riel Superior',
+            imagen:'../images/JPG/RIELES.webp',
+            descripcion: 'RIEL SUPERIOR 170 X 3 MTS PARA PUERTAS Y PORTONES CORREDIZOS.',
+            precio: 6500,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 32,
+            nombre: 'Carro 170',
+            imagen:'../images/JPG/CARROS.jpg',
+            descripcion: 'CARRO 170 PARA RIEL SUPERIOR.',
+            precio: 1900,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 33,
+            nombre: 'Rueda 32 mm',
+            imagen:'../images/JPG/ruedas-con-ruleman.png',
+            descripcion: 'RUEDA CON RULEMAN 32MM PARA PUERTAS CORREDIZAS DE MUEBLES DE EMBUTIR.',
+            precio: 400,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 34,
+            nombre: 'Rueda Aplicar',
+            imagen:'../images/JPG/ruedas-aplicar.jpg',
+            descripcion: 'RUEDA CON RULEMAN PARA PUERTAS CORREDIZAS DE MUEBLES DE APLICAR.',
+            precio: 300,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 35,
+            nombre: 'Perno Rollete',
+            imagen:'../images/JPG/perno.jpg',
+            descripcion: 'PERNO ROLLETE PARA GUIA U PISO DE PORTONES CORREDIZOS CURVOS.',
+            precio: 1200,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 36,
+            nombre: 'Guia U Piso',
+            imagen:'../images/JPG/guiaU.jpeg',
+            descripcion: 'GUIA U PISO X 3 MTS. PARA PORTONES CORREDIZOS RECTOS Y CURVOS.',
+            precio: 6500,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 37,
+            nombre: 'Kit Granero',
+            imagen:'../images/JPG/granero.jpeg',
+            descripcion: 'KIT GRANERO PARA PUERTAS CORREDIZAS DE 2 MTS.',
+            precio: 12500,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 38,
+            nombre: 'Kit Granero',
+            imagen:'../images/JPG/granero.jpeg',
+            descripcion: 'KIT GRANERO PARA PUERTAS CORREDIZAS DE 3 MTS.',
+            precio: 16000,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 39,
+            nombre: 'Candex 123',
+            imagen:'../images/JPG/123-Candex.jpg',
+            descripcion: 'CERRADURA CANDEX 123 PARA PUERTAS Y PORTONES CORREDIZOS.',
+            precio: 4900,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 40,
+            nombre: 'Kit D-52',
+            imagen:'../images/JPG/KIT-D52.jpg',
+            descripcion: 'KIT D-52 PARA PUERTAS CORREDIZAS DE PLACARD.',
+            precio: 2500,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 41,
+            nombre: 'Kit 1536',
+            imagen:'../images/JPG/KIT-MR-1535.jpg',
+            descripcion: 'KIT 1535 PARA PUERTAS CORREDIZAS DE MADERA DE MUEBLES.',
+            precio: 1900,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 42,
+            nombre: 'Kit Integral',
+            imagen:'../images/JPG/Dormitorio.jpg',
+            descripcion: 'KIT INTEGRAL CORREDIZO PARA VESTIDORES.',
+            precio: 18000,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 43,
+            nombre: 'Kit Integral Premium',
+            imagen:'../images/JPG/KIT-INTEGRAL-PREMIUM.jpg',
+            descripcion: 'KIT INTEGRAL CORREDIZO PREMIUM PARA VESTIDORES.',
+            precio: 21000,
+            stock: 20,
+            cantidad : 0,
+        },
+    ];
     
     
     let carrito = [];
-    const divisa = '$';
     const DOMitems = document.querySelector('#productos');
-    // const DOMcarrito = document.querySelector('#carrito');
-    // const DOMtotal = document.querySelector('.price-total');
     const DOMbotonVaciar = document.querySelector('.btn-danger');
-    // const miLocalStorage = window.localStorage;
+    const miLocalStorage = window.localStorage;
     let amountProduct = document.querySelector('#count-product');
     let countProduct = 0;
     totalCard = 0;
@@ -236,6 +405,7 @@ document.addEventListener('DOMContentLoaded', () => {
     containerBuyCart.addEventListener('click', deleteProduct);
     
     function renderizarProductos() {
+       
         cerraduras.forEach((info) => {
             // Estructura
             const miNodoCard = document.createElement('div');
@@ -260,7 +430,9 @@ document.addEventListener('DOMContentLoaded', () => {
             miNodoDescripcion.textContent = info.descripcion;   
             // Precio
             const miNodoPrecio = document.createElement('h6');
-            miNodoPrecio.textContent = `${info.precio}${divisa}`;
+            miNodoPrecio.setAttribute('price',info.precio);
+            miNodoPrecio.textContent = 	`$${info.precio}`;
+                        
             // Boton 
             const miNodoBoton = document.createElement('button');
             miNodoBoton.classList.add('btn-add-cart');
@@ -277,17 +449,18 @@ document.addEventListener('DOMContentLoaded', () => {
             miNodoCardBody.appendChild(miNodoBoton);
             miNodoCard.appendChild(miNodoCardBody);
             DOMitems.appendChild(miNodoCard);
-        });
+        
+        });   
     }
     function addProduct(e){
         e.preventDefault();
         if (e.target.classList.contains('btn-add-cart')) {
             const selectProduct = e.target.parentElement; 
             readTheContent(selectProduct);
-            console.log(selectProduct);
+            //console.log(selectProduct);
         }
       
-       // guardarCarritoEnLocalStorage();
+        //guardarCarritoEnLocalStorage();
     }
     function deleteProduct(e) {
         if (e.target.classList.contains('delete-product')) {
@@ -313,15 +486,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function readTheContent(product){
         const infoProduct = {
             nombre: product.querySelector('.card-title').textContent,
-            precio: product.querySelector('h6').textContent,
+            precio: product.querySelector('h6').getAttribute('price'),
             id: product.querySelector('button').getAttribute('marcador'),
             cantidad: 1,
         }
-        console.log(infoProduct.precio);
-        console.log(totalCard);
+        //console.log(infoProduct.precio);
+        //console.log(totalCard);
         totalCard = parseInt(totalCard) + parseInt(infoProduct.precio);
-        //priceTotal = priceTotal.toFixed(2);
-        console.log(totalCard);
+        //console.log(totalCard);
         const exist = carrito.some(product => product.id === infoProduct.id);
         if (exist) {
             const pro = carrito.map(product => {
@@ -337,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carrito = [...carrito, infoProduct]
             countProduct++;
         }
-        console.log(infoProduct);
+        //console.log(infoProduct);
         loadHtml();
     }
    
@@ -346,11 +518,10 @@ document.addEventListener('DOMContentLoaded', () => {
         carrito.forEach(product => {
             const {nombre, precio, cantidad, id} = product;
             const row = document.createElement('thead');
-            //row.classList.add('div');
             row.innerHTML = `
                     <tr>
                         <th>Nombre: ${nombre} </th>
-                        <th>Precio: ${precio} </th>
+                        <th>Precio: $${precio} </th>
                         <th>Cantidad: ${cantidad} </th>
                     </tr>
                 <span class="delete-product" data-id="${id}">X</span>
@@ -358,9 +529,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
             containerBuyCart.appendChild(row);
             priceTotal.innerHTML = totalCard;
-            console.log(priceTotal)
+            //console.log(priceTotal)
             amountProduct.innerHTML = countProduct;
-            console.log(totalCard);
+            //console.log(totalCard);
 
         });
     }   
@@ -385,24 +556,27 @@ document.addEventListener('DOMContentLoaded', () => {
         priceTotal.innerHTML = totalCard;
     }
 
-    // function guardarCarritoEnLocalStorage () {
-    //     miLocalStorage.setItem('carrito', JSON.stringify(carrito));
-    // }
+    function guardarCarritoEnLocalStorage () {
+        miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+    }
 
-    // function cargarCarritoDeLocalStorage () {
-    //     // ¿Existe un carrito previo guardado en LocalStorage?
-    //     if (miLocalStorage.getItem('carrito') !== null) {
-    //         // Carga la información
-    //         carrito = JSON.parse(miLocalStorage.getItem('carrito'));
-    //     }
-    // }
+    function cargarCarritoDeLocalStorage () {
+        // ¿Existe un carrito previo guardado en LocalStorage?
+        if (miLocalStorage.getItem('carrito') !== null) {
+            // Carga la información
+            carrito = JSON.parse(miLocalStorage.getItem('carrito'));
+            loadHtml();
+            priceTotal.innerHTML = totalCard;
+            amountProduct.innerHTML = countProduct;
+        }
+    }
 
     // Eventos
     DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
     // Inicio
-    //cargarCarritoDeLocalStorage();
+    cargarCarritoDeLocalStorage();
     renderizarProductos();
-   
+  
     
 });  
