@@ -81,6 +81,24 @@ document.addEventListener('DOMContentLoaded', () => {
             stock: 20,
             cantidad : 0,
         },
+        {
+            id: 53,
+            nombre: 'Bisagra Munición',
+            imagen:'../images/JPG/Municion-100x75x3.jpeg',
+            descripcion: 'BISAGRA MUNICIÓN 4 PULGADAS.',
+            precio: 1300,
+            stock: 20,
+            cantidad : 0,
+        },
+        {
+            id: 54,
+            nombre: 'Bisagra Munición',
+            imagen:'../images/JPG/MUNICION-78X78X3.jpg',
+            descripcion: 'BISAGRA MUNICIÓN 3 PULGADAS.',
+            precio: 1200,
+            stock: 20,
+            cantidad : 0,
+        },
     ];
 
     let carrito = [];

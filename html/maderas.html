@@ -1,109 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contáctanos</title>
-    <link rel="stylesheet" href="../css/inicio/inicio.css">
-    <link rel="stylesheet" href="../css/productos/cerraduras.css">
-    <link rel="stylesheet" href="../css/general/menu.css">
-    <link rel="stylesheet" href="../css/productos/productos.css">
-    <link rel="stylesheet" href="../css/general/skeleton.css">
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="../css/inicio/inicio.css" />
+    <link rel="stylesheet" href="../css/productos/cerraduras.css" />
+    <link rel="stylesheet" href="../css/general/menu.css" />
+    <link rel="stylesheet" href="../css/productos/productos.css" />
+    <link rel="stylesheet" href="../css/general/skeleton.css" />
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header id="header">
-        <div class="container__header">
-            <div class="logo">
-                <a href="../index.html"><img src="../images/PNG/herrajes.png" alt="logo" class="logito" width="140" height="80"></a>
-                <h1 class="logo-chuqui">Herrajes Arroyo</h1>
-            </div>
-            <div class="nav-search">
-                <a href="">
-                    <i class="fa fa-search" id="find">
-                    </i>
-                </a>
-                <input type="text" id="search" placeholder="Busqueda">
-            </div>
-            <div class="container__nav">
-                <nav id="nav" class="nav_menu">
-                    <ul class="container_menu">
-                        <li class="submenu">
-                            <a href="#" id="cart"><i class="fas fa-solid fa-shopping-cart"></i></a>
-                            <div id="carrito">
-                               
-                                    <table id="lista-carrito" class="u-full-width">
-                                        <thead>
-                                            <tr>
-                                                <th>Nombre</th>
-                                                <th>Precio</th>
-                                                <th>Cantidad</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
-    
-                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                                    <a href="#" id="finalizar-compra" class="button u-full-width">Finalizar Compra</a>
-                            </div>
-                        </li>    
-                        <li class="texto_menu"><a href="../html/productos.html" class="select">Productos</a></li>
-                        <li class="texto_menu"><a href="../html/contactanos.html">Contáctanos</a></li>
-                        <li class="texto_menu"><a href="../html/nosotros.html">Nosotros</a></li>
-                        <div class="modo" id="modo">
-                            <i class="fas fa-toggle-on"></i>
-                        </div>
-                    </ul>
-                </nav>
-                <div class="btn__menu" id="btn_menu"><i class="fas fa-bars"></i></div>
-            </div>
+      <div class="container__header">
+        <div class="logo">
+          <a href="../index.html"
+            ><img
+              src="../images/PNG/herrajes.png"
+              alt="logo"
+              class="logito"
+              width="140"
+              height="80"
+          /></a>
+          <h1 class="logo-chuqui">Herrajes Arroyo</h1>
         </div>
+        <div class="nav-search">
+          <a href="">
+            <i class="fa fa-search" id="find"> </i>
+          </a>
+          <input type="text" id="search" placeholder="Busqueda" />
+        </div>
+        <div class="container__nav">
+          <nav id="nav" class="nav_menu">
+            <ul class="container_menu">
+              <li class="submenu">
+                <a href="#" id="cart"
+                  ><i class="fas fa-solid fa-shopping-cart"></i
+                ></a>
+                <p id="count-product">0</p>
+                <div class="carrito" id="carrito">
+                  <h4>Mi Carrito</h4>
+                  <div class="lista-carrito"></div>
+                  <h4>Total:$ <strong id="price-total">0</strong></h4>
+                  <a href="#" class="btn-danger button u-full-width"
+                    >Vaciar Carrito</a
+                  >
+                  <a href="#" class="button finalizar-compra u-full-width"
+                    >Finalizar Compra</a
+                  >
+                </div>
+              </li>
+              <li class="texto_menu">
+                <a href="../html/productos.html" class="select">Productos</a>
+              </li>
+              <li class="texto_menu">
+                <a href="../html/contactanos.html">Contáctanos</a>
+              </li>
+              <li class="texto_menu">
+                <a href="../html/nosotros.html">Nosotros</a>
+              </li>
+              <div class="modo" id="modo">
+                <i class="fas fa-toggle-on"></i>
+              </div>
+            </ul>
+          </nav>
+          <div class="btn__menu" id="btn_menu"><i class="fas fa-bars"></i></div>
+        </div>
+      </div>
     </header>
 
     <main class="container__all" id="container_all">
         <div class="cover">
-
+          <div class="contenido-card">
+            <div class="heading">
+              <h1>Tirantes y Machimbres</h1>
+            </div>
+            <div id="productos" class="row"></div>
+          </div>
         </div>
-    </main>
+      </main>
 
     <footer class="footer">
-        <a href="https://api.whatsapp.com/send?phone=543777516220" target="_blank" rel="noopener noreferrer">
-            <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp">
-        </a>
-        <div class="container-footer">
-            <div class="row">
-                <div class="footer-column">
-                    <h4>Empresa</h4>
-                    <ul>
-                        <li><a href="../html/productos.html">Productos</a></li>
-                        <li><a href="../html/contactanos.html">Contáctanos</a></li>
-                        <li><a href="../html/nosotros.html">Nosotros</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Ayuda</h4>
-                    <ul>
-                        <li><a href="#">Ubicación</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Redes sociales</h4>
-                    <div class="redes-sociales">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
+      <a
+        href="https://api.whatsapp.com/send?phone=543777516220"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="btn-whatsapp"
+          src="https://clientes.dongee.com/whatsapp.png"
+          width="64"
+          height="64"
+          alt="Whatsapp"
+        />
+      </a>
+      <div class="container-footer">
+        <div class="row">
+          <div class="footer-column">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="../html/productos.html">Productos</a></li>
+              <li><a href="../html/contactanos.html">Contáctanos</a></li>
+              <li><a href="../html/nosotros.html">Nosotros</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">Ubicación</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Redes sociales</h4>
+            <div class="redes-sociales">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
+          </div>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=543777516220" target="_blank" rel="noopener noreferrer"><h1 class="pie-page">&copy; 2022, Matias Arroyo| Todos los derechos reservados</h1></a>
+      </div>
+      <a
+        href="https://api.whatsapp.com/send?phone=543777516220"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><h1 class="pie-page">
+          &copy; 2022, Matias Arroyo| Todos los derechos reservados
+        </h1></a
+      >
     </footer>
-    
+
     <!------------------------JavaScript---------------------------->
-    <script src="../js/script.js"></script>
+    <script src="../js/maderas.js"></script>
+    <script src="../js/script.js"></script>   
     <script src="../js/dark.js"></script>
     <script src="../boostrap/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
