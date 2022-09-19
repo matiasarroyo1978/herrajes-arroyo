@@ -230,19 +230,22 @@ document.addEventListener('DOMContentLoaded', () => {
         let containerBuyCart = document.querySelector('.lista-carrito');
         containerBuyCart.addEventListener('click', deleteProduct);
         
-        let basket = JSON.parse(localStorage.getItem("data")) || [];
+//         let basket = JSON.parse(localStorage.getItem("data")) || [];
 
-// /**
-//  To calculate total amount of selected Items
-//  
+// // /**
+// //  To calculate total amount of selected Items
+// //  
 
 //         let calculation = () => {
-//         let cartIcon = document.getElementById("count-product");
-//         console.log(cartIcon);
+//         let cartIcon = document.querySelector('#count-product');
+        
 //         cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
 //         };
-
+//         console.log('cartIcon');
 //         calculation();
+
+
+
         function renderizarProductos() {
            
             cerraduras.forEach((info) => {
@@ -394,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
             countProduct = 0;
             amountProduct.innerHTML = countProduct;
             priceTotal.innerHTML = totalCard;
-            calculation();
+            //calculation();
             guardarCarritoEnLocalStorage();
         }
     
@@ -408,9 +411,19 @@ document.addEventListener('DOMContentLoaded', () => {
             if (miLocalStorage.getItem('carrito') !== null) {
                 // Carga la información
                 carrito = JSON.parse(miLocalStorage.getItem('carrito'));
-                console.log(carrito);
-                calculation();
-                loadHtml();
+                countProduct = carrito.length;
+                amountProduct.innerHTML = countProduct;
+
+                totalCard = 0;
+                // for (let i=0;i<=countProduct;i++){
+                //     //totalCard = parseInt(totalCard) + parseInt(carrito[i].precio);
+                // } 
+                priceTotal.innerHTML = totalCard;
+                console.log(totalCard);
+                console.log(carrito[3].precio);
+                console.log(countProduct);
+                //calculation();
+                //loadHtml();
 
             }else carrito=[];
                   loadHtml();   
@@ -425,6 +438,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Inicio
         cargarCarritoDeLocalStorage();
         renderizarProductos();
-        calculation();
+        //calculation();
         
 });  
