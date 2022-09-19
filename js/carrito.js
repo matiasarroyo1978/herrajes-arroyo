@@ -318,6 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 carrito = carrito.filter(product => product.id !== deleteId);
                 
                 countProduct--;
+                guardarCarritoEnLocalStorage();
             }
             if (carrito.length === 0) {
                 priceTotal.innerHTML = 0;
@@ -413,10 +414,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 carrito = JSON.parse(miLocalStorage.getItem('carrito'));
                 countProduct = carrito.length;
                 amountProduct.innerHTML = countProduct;
-
+                console.log(carrito);
                 totalCard = 0;
                 // for (let i=0;i<=countProduct;i++){
                 //     //totalCard = parseInt(totalCard) + parseInt(carrito[i].precio);
+                //     console.log(i);
                 // } 
                 priceTotal.innerHTML = totalCard;
                 console.log(totalCard);
