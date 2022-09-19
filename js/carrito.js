@@ -420,7 +420,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // } 
                 priceTotal.innerHTML = totalCard;
                 console.log(totalCard);
-                console.log(carrito[3].precio);
+                //console.log(carrito[3].precio);
                 console.log(countProduct);
                 //calculation();
                 //loadHtml();
