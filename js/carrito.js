@@ -343,10 +343,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 const pro = carrito.map(product => {
                     if (product.id === infoProduct.id) {
                         product.cantidad++;
+                        countProduct++;
                         return product;
                     } else {
                         return product
                     }
+                    
                 });
                 carrito = [...pro];
             } else {
@@ -416,16 +418,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 amountProduct.innerHTML = countProduct;
                 console.log(carrito);
                 totalCard = 0;
-                // for (let i=0;i<=countProduct;i++){
-                //     //totalCard = parseInt(totalCard) + parseInt(carrito[i].precio);
-                //     console.log(i);
-                // } 
+                for (let i=0;i<countProduct;i++){
+                    totalCard = parseInt(totalCard) + parseInt(carrito[i].precio);
+                    console.log(i);
+                } 
                 priceTotal.innerHTML = totalCard;
                 console.log(totalCard);
                 //console.log(carrito[3].precio);
                 console.log(countProduct);
                 //calculation();
-                //loadHtml();
+                loadHtml();
 
             }else carrito=[];
                   loadHtml();   
