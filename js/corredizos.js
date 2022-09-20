@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let carrito = [];
         const DOMitems = document.querySelector('#productos');
         const DOMbotonVaciar = document.querySelector('.btn-danger');
-        //const miLocalStorage = window.localStorage;
+        const miLocalStorage = window.localStorage;
         let amountProduct = document.querySelector('#count-product');
         let countProduct = 0;
         totalCard = 0;
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 //console.log(selectProduct);
             }
           
-            //guardarCarritoEnLocalStorage();
+            guardarCarritoEnLocalStorage();
         }
         function deleteProduct(e) {
             if (e.target.classList.contains('delete-product')) {
@@ -270,6 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const pro = carrito.map(product => {
                     if (product.id === infoProduct.id) {
                         product.cantidad++;
+                        countProduct++;
                         return product;
                     } else {
                         return product
@@ -325,28 +326,46 @@ document.addEventListener('DOMContentLoaded', () => {
             countProduct = 0;
             amountProduct.innerHTML = countProduct;
             priceTotal.innerHTML = totalCard;
+            guardarCarritoEnLocalStorage();
         }
     
-        // function guardarCarritoEnLocalStorage () {
-        //     miLocalStorage.setItem('carrito', JSON.stringify(carrito));
-        // }
+        function guardarCarritoEnLocalStorage () {
+            miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+        }
     
-        // function cargarCarritoDeLocalStorage () {
-        //     // ¿Existe un carrito previo guardado en LocalStorage?
-        //     if (miLocalStorage.getItem('carrito') !== null) {
-        //         // Carga la información
-        //         carrito = JSON.parse(miLocalStorage.getItem('carrito'));
-        //         loadHtml();
-        //         priceTotal.innerHTML = totalCard;
-        //         amountProduct.innerHTML = countProduct;
-        //     }
-        // }
+        function cargarCarritoDeLocalStorage () {
+            // ¿Existe un carrito previo guardado en LocalStorage?
+            if (miLocalStorage.getItem('carrito') !== null) {
+                // Carga la información
+                carrito = JSON.parse(miLocalStorage.getItem('carrito'));
+                countProduct = carrito.length
+                console.log(countProduct);
+                
+                amountProduct.innerHTML = countProduct;
+                console.log(countProduct);
+                totalCard = 0;
+                for (let i=0;i<countProduct;i++){
+                    totalCard = parseInt(totalCard) + parseInt(carrito[i].precio);
+                    console.log(i);
+                } 
+                priceTotal.innerHTML = totalCard;
+                
+                console.log(totalCard);
+                console.log(countProduct);
+                
+                
+                loadHtml();
+
+            }else carrito=[];
+                  loadHtml();   
+                
+            }
     
         // Eventos
         DOMbotonVaciar.addEventListener('click', vaciarCarrito);
     
         // Inicio
-        //cargarCarritoDeLocalStorage();
+        cargarCarritoDeLocalStorage();
         renderizarProductos();
 
 

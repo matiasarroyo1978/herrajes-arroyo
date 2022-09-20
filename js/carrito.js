@@ -229,21 +229,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let priceTotal = document.querySelector('#price-total')
         let containerBuyCart = document.querySelector('.lista-carrito');
         containerBuyCart.addEventListener('click', deleteProduct);
-        
-//         let basket = JSON.parse(localStorage.getItem("data")) || [];
-
-// // /**
-// //  To calculate total amount of selected Items
-// //  
-
-//         let calculation = () => {
-//         let cartIcon = document.querySelector('#count-product');
-        
-//         cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
-//         };
-//         console.log('cartIcon');
-//         calculation();
-
 
 
         function renderizarProductos() {
@@ -400,7 +385,7 @@ document.addEventListener('DOMContentLoaded', () => {
             countProduct = 0;
             amountProduct.innerHTML = countProduct;
             priceTotal.innerHTML = totalCard;
-            //calculation();
+           
             guardarCarritoEnLocalStorage();
         }
     
@@ -414,19 +399,22 @@ document.addEventListener('DOMContentLoaded', () => {
             if (miLocalStorage.getItem('carrito') !== null) {
                 // Carga la información
                 carrito = JSON.parse(miLocalStorage.getItem('carrito'));
-                countProduct = carrito.length;
+                countProduct = carrito.length
+                console.log(countProduct);
+                
                 amountProduct.innerHTML = countProduct;
-                console.log(carrito);
+                console.log(countProduct);
                 totalCard = 0;
                 for (let i=0;i<countProduct;i++){
                     totalCard = parseInt(totalCard) + parseInt(carrito[i].precio);
                     console.log(i);
                 } 
                 priceTotal.innerHTML = totalCard;
+                
                 console.log(totalCard);
-                //console.log(carrito[3].precio);
                 console.log(countProduct);
-                //calculation();
+                
+                
                 loadHtml();
 
             }else carrito=[];
@@ -442,6 +430,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Inicio
         cargarCarritoDeLocalStorage();
         renderizarProductos();
-        //calculation();
+    
         
 });  
