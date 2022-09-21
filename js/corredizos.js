@@ -340,12 +340,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // ¿Existe un carrito previo guardado en LocalStorage?
             if (miLocalStorage.getItem('carrito') !== null) {
                 // Carga la información
-                totalCard = 0;
-                countProduct = 0;
                 carrito = JSON.parse(miLocalStorage.getItem('carrito'));
                 for (let i=0;i<carrito.length;i++){
                     if (carrito[i].cantidad > 1){
-                        totalCard = carrito[i].precio * carrito[i].cantidad;
+                        subTotal = carrito[i].precio * carrito[i].cantidad;
+                        totalCard = parseInt(totalCard) + parseInt(subTotal);
                     } else totalCard = parseInt(totalCard) + parseInt(carrito[i].precio);
                            countProduct = carrito.length;
                 }
