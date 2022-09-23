@@ -229,10 +229,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let priceTotal = document.querySelector('#price-total')
         let containerBuyCart = document.querySelector('.lista-carrito');
         containerBuyCart.addEventListener('click', deleteProduct);
-        
+        //let searchItems = document.querySelector(".search");   
 
         function renderizarProductos() {
-           
+        
             cerraduras.forEach((info) => {
                 // Estructura
                 const miNodoCard = document.createElement('div');
@@ -279,6 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             });   
         }
+      
         function addProduct(e){
             e.preventDefault();
             if (e.target.classList.contains('btn-add-cart')) {
@@ -290,6 +291,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         function deleteProduct(e) {
             if (e.target.classList.contains('delete-product')) {
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "El producto fue quitado",
+                    showConfirmButton: false,
+                    timer: 1700,
+                });
                 const deleteId = e.target.getAttribute('data-id');
         
                 carrito.forEach(value => {
@@ -318,6 +326,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 id: product.querySelector('button').getAttribute('marcador'),
                 cantidad: 1,
             }
+            function comprobar() {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "El producto fue agregado al carrito",
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
+            }    
             totalCard = parseInt(totalCard) + parseInt(infoProduct.precio);
             const exist = carrito.some(product => product.id === infoProduct.id);
             if (exist) {
@@ -336,6 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 carrito = [...carrito, infoProduct]
                 countProduct++;
             }
+            comprobar();
             loadHtml();
         }
        
@@ -367,11 +385,33 @@ document.addEventListener('DOMContentLoaded', () => {
             containerBuyCart.innerHTML = '';
             }
         
-        
+        // searchItems.addEventListener("input", (e) => {
+        //         //search items
+        //         let search = e.target.value;
+        //         console.log(search);
+        //         filterData = cerraduras.filter((product) => {
+        //           return product.nombre.toLowerCase().includes(search.toLowerCase());
+        //         });
+        //         renderizarProductos(filterData);
+        //         if (filterData.length == 0) {
+        //           products.innerHTML = `
+        //           <div class="d-flex justify-content-center align-items-center ">
+        //           <img src="https://www.wholesalegang.com/assets/imgs/noproduct.png" alt = "Producto No Encontrado">
+        //           </div>
+        //           `;
+        //         }
+        // });
         /**
         * Vacia el carrito y vuelve a dibujarlo
         */
         function vaciarCarrito() {
+            Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "El carrito fue vaciado",
+                showConfirmButton: false,
+                timer: 1700,
+            });
             // Limpiamos los productos guardados
             carrito = [];
             // Renderizamos los cambios
@@ -382,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
             countProduct = 0;
             amountProduct.innerHTML = countProduct;
             priceTotal.innerHTML = totalCard;
-           
+            
             guardarCarritoEnLocalStorage();
         }
     

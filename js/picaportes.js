@@ -169,6 +169,13 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 function deleteProduct(e) {
     if (e.target.classList.contains('delete-product')) {
+      Swal.fire({
+        position: "center",
+        icon: "error",
+        title: "El producto fue quitado",
+        showConfirmButton: false,
+        timer: 1700,
+      });
         const deleteId = e.target.getAttribute('data-id');
 
         carrito.forEach(value => {
@@ -197,6 +204,15 @@ function readTheContent(product){
         id: product.querySelector('button').getAttribute('marcador'),
         cantidad: 1,
     }
+    function comprobar() {
+      Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "El producto fue agregado al carrito",
+          showConfirmButton: false,
+          timer: 1500,
+      });
+  }    
     totalCard = parseInt(totalCard) + parseInt(infoProduct.precio);
     const exist = carrito.some(product => product.id === infoProduct.id);
     if (exist) {
@@ -215,6 +231,7 @@ function readTheContent(product){
         carrito = [...carrito, infoProduct]
         countProduct++;
     }
+    comprobar();
     loadHtml();
 }
 
@@ -251,6 +268,13 @@ function clearHtml(){
 * Vacia el carrito y vuelve a dibujarlo
 */
 function vaciarCarrito() {
+    Swal.fire({
+    position: "center",
+    icon: "error",
+    title: "El carrito fue vaciado",
+    showConfirmButton: false,
+    timer: 1700,
+    });
     // Limpiamos los productos guardados
     carrito = [];
     // Renderizamos los cambios
