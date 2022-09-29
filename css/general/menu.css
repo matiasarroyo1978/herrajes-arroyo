@@ -85,28 +85,28 @@ header .logo{
     font-size: 15px;
     transition: all .5s ease;
 }
-.nav-search{
-    width: 17vw;
+#formulario{
+    width: 14vw;
     margin: auto;
     position: relative;
 }
-#search{
+#buscador{
     margin:0 auto;
-    width: 18vw;
+    width: 14vw;
     outline: none;
     font-size: 1rem;
     padding: 0.2rem 2rem 0.2rem 1rem;
     border-radius: 1rem;
     border: none;
 }
-#find{
-    margin: 0 auto;
+#botonBusqueda{
+    margin:  auto;
     position: absolute;
     font-size: 1rem;
-    top: 1.3rem;
-    right: 0.5rem;
+    top: 0.8rem;
+    right: 1rem;
     color: #fe950b;
-    /*background: transparent;*/
+    background: transparent;
 }
 #cart{
     color:#fe950b;

@@ -11,6 +11,8 @@
         const carro = document.querySelector("#carrito");
         let dataProductos;
         const finalizarCompra = document.querySelector('.finalizar-compra');
+        $("#formulario").on("submit", filtrarProductos);
+        const listaProductos = document.querySelector("#productos");
 
         document.addEventListener('DOMContentLoaded', () => {
    
@@ -209,43 +211,35 @@
         }   
         function clearHtml(){
             containerBuyCart.innerHTML = '';
+        }
+
+        function filtrarProductos(e) {
+            e.preventDefault();
+        
+            const busqueda = $("#buscador").val();
+        
+            const resultado = dataProductos.filter((producto) =>
+                producto.nombre.toLocaleLowerCase().includes(busqueda.toLocaleLowerCase())
+            );
+           
+            limpiarProductos();
+            renderizarProductos(resultado);
+        }
+        function limpiarCarrito() {
+            while (containerBuyCart.firstChild) {
+                containerBuyCart.removeChild(containerBuyCart.firstChild);
             }
-        // function filtrarProductos(e) {
-        //         e.preventDefault();
-            
-        //         const busqueda = $("#buscador").val();
-            
-        //         const resultado = cerraduras.filter((producto) =>
-        //             producto.nombre.toLocaleLowerCase().includes(busqueda.toLocaleLowerCase())
-        //         );
-            
-        //         limpiarProductos();
-        //         renderizarProductos(resultado);
-        // }
-        // function limpiarProductos() {
-        //     while (cerraduras.firstChild) {
-        //         cerraduras.removeChild(listaProductos.firstChild);
-        //     }
-        // }
-        // searchItems.addEventListener("input", (e) => {
-        //         //search items
-        //         let search = e.target.value;
-        //         console.log(search);
-        //         filterData = cerraduras.filter((product) => {
-        //           return product.nombre.toLowerCase().includes(search.toLowerCase());
-        //         });
-        //         renderizarProductos(filterData);
-        //         if (filterData.length == 0) {
-        //           products.innerHTML = `
-        //           <div class="d-flex justify-content-center align-items-center ">
-        //           <img src="https://www.wholesalegang.com/assets/imgs/noproduct.png" alt = "Producto No Encontrado">
-        //           </div>
-        //           `;
-        //         }
-        // });
+        }
+        
+        function limpiarProductos() {
+            while (listaProductos.firstChild) {
+                listaProductos.removeChild(listaProductos.firstChild);
+            }
+        }
         /**
         * Vacia el carrito y vuelve a dibujarlo
         */
+
         function vaciarCarrito() {
             Swal.fire({
                 position: "center",
