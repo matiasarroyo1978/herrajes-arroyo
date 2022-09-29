@@ -221,9 +221,17 @@
             const resultado = dataProductos.filter((producto) =>
                 producto.nombre.toLocaleLowerCase().includes(busqueda.toLocaleLowerCase())
             );
-           
-            limpiarProductos();
-            renderizarProductos(resultado);
+            console.log(resultado)
+            if (resultado.length===0){
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "Producto no Encontrado",
+                    showConfirmButton: false,
+                    timer: 1700,
+                });
+            }else limpiarProductos();
+                  renderizarProductos(resultado);
         }
         function limpiarCarrito() {
             while (containerBuyCart.firstChild) {
