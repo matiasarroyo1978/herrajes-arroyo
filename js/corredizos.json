@@ -1,0 +1,164 @@
+[
+    {
+        "id": "25",
+        "nombre": "Herraje Corredizo Curvo",
+        "imagen":"../images/JPG/corredizo-curvo.webp",
+        "descripcion": "KIT CORREDIZO CURVO PARA PORTON 4 HOJAS DE MADERA.",
+        "precio": "65000",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "26",
+        "nombre": "Herraje Corredizo Curvo",
+        "imagen":"../images/JPG/curvo-herrero.jpg",
+        "descripcion": "KIT CORREDIZO CURVO PARA PORTON 4 HOJAS DE HIERRO.",
+        "precio": "60000",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "27",
+        "nombre": "Estabilizador Doble",
+        "imagen":"../images/JPG/estabilizador.png",
+        "descripcion": "ESTABILIZADOR DOBLE PARA PORTONES CORREDIZOS RECTOS.",
+        "precio": "4500",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "28",
+        "nombre": "Estabilizador Simple",
+        "imagen":"../images/JPG/estabilizador-simple.png",
+        "descripcion": "ESTABILIZADOR SIMPLE PARA PORTONES CORREDIZOS RECTOS.",
+        "precio": "2500",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "29",
+        "nombre": "Rueda con Soporte",
+        "imagen":"../images/JPG/Rueda-con-soportE.png",
+        "descripcion": "RUEDA CON SOPORTE PARA PORTONES CORREDIZOS CON CANAL PARA HIERRO ÁNGULO.",
+        "precio": "2300",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "30",
+        "nombre": "Rueda con Perno",
+        "imagen":"../images/JPG/Rueda-con-perno.png",
+        "descripcion": "RUEDA CON PERNO PARA PORTONES CORREDIZOS CON CANAL PARA HIERRO ÁNGULO.",
+        "precio": "2300",
+        "stock": "20",
+        "cantidad" :"0" 
+    },
+    {
+        "id": "31",
+        "nombre": "Riel Superior",
+        "imagen":"../images/JPG/RIELES.webp",
+        "descripcion": "RIEL SUPERIOR 170 X 3 MTS PARA PUERTAS Y PORTONES CORREDIZOS.",
+        "precio": "6500",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "32",
+        "nombre": "Carro 170",
+        "imagen":"../images/JPG/CARROS.jpg",
+        "descripcion": "CARRO 170 PARA RIEL SUPERIOR.",
+        "precio": "1900",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "33",
+        "nombre": "Rueda 32 mm",
+        "imagen":"../images/JPG/ruedas-con-ruleman.png",
+        "descripcion": "RUEDA CON RULEMAN 32MM PARA PUERTAS CORREDIZAS DE MUEBLES DE EMBUTIR.",
+        "precio": "400",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "34",
+        "nombre": "Rueda Aplicar",
+        "imagen":"../images/JPG/ruedas-aplicar.jpg",
+        "descripcion": "RUEDA CON RULEMAN PARA PUERTAS CORREDIZAS DE MUEBLES DE APLICAR.",
+        "precio": "300",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "35",
+        "nombre": "Perno Rollete",
+        "imagen":"../images/JPG/perno.jpg",
+        "descripcion": "PERNO ROLLETE PARA GUIA U PISO DE PORTONES CORREDIZOS CURVOS.",
+        "precio": "1200",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "36",
+        "nombre": "Guia U Piso",
+        "imagen":"../images/JPG/guiaU.jpeg",
+        "descripcion": "GUIA U PISO X 3 MTS. PARA PORTONES CORREDIZOS RECTOS Y CURVOS.",
+        "precio": "6500",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "37",
+        "nombre": "Kit Granero",
+        "imagen":"../images/JPG/granero.jpeg",
+        "descripcion": "KIT GRANERO PARA PUERTAS CORREDIZAS DE 2 MTS.",
+        "precio": "12500",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "38",
+        "nombre": "Kit Granero",
+        "imagen":"../images/JPG/granero.jpeg",
+        "descripcion": "KIT GRANERO PARA PUERTAS CORREDIZAS DE 3 MTS.",
+        "precio": "16000",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "40",
+        "nombre": "Kit D-52",
+        "imagen":"../images/JPG/KIT-D52.jpg",
+        "descripcion": "KIT D-52 PARA PUERTAS CORREDIZAS DE PLACARD.",
+        "precio": "2500",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "41",
+        "nombre": "Kit 1536",
+        "imagen":"../images/JPG/KIT-MR-1535.jpg",
+        "descripcion": "KIT 1535 PARA PUERTAS CORREDIZAS DE MADERA DE MUEBLES.",
+        "precio": "1900",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "42",
+        "nombre": "Kit Integral",
+        "imagen":"../images/JPG/Dormitorio.jpg",
+        "descripcion": "KIT INTEGRAL CORREDIZO PARA VESTIDORES.",
+        "precio": "18000",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "43",
+        "nombre": "Kit Integral Premium",
+        "imagen":"../images/JPG/KIT-INTEGRAL-PREMIUM.jpg",
+        "descripcion": "KIT INTEGRAL CORREDIZO PREMIUM PARA VESTIDORES.",
+        "precio": "21000",
+        "stock": "20",
+        "cantidad" : "0"
+    }   
+]
