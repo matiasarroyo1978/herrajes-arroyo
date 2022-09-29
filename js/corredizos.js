@@ -234,17 +234,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     showConfirmButton: false,
                     timer: 1700,
                 });
-                //vaciarCarrito();
-                productosCarro = [];
-                clearHtml();
-                // Borra LocalStorage
-                miLocalStorage.clear();
-                totalCard = 0;
-                countProduct = 0;
-                amountProduct.innerHTML = countProduct;
-                priceTotal.innerHTML = totalCard;
+                carrito = [];
+            // Renderizamos los cambios
+            clearHtml();
+            // Borra LocalStorage
+            miLocalStorage.clear();
+            totalCard = 0;
+            countProduct = 0;
+            amountProduct.innerHTML = countProduct;
+            priceTotal.innerHTML = totalCard;
+           
+            guardarCarritoEnLocalStorage();
             
-                guardarCarritoEnLocalStorage();
             }
         }    
         function addProduct(e){
@@ -411,5 +412,4 @@ document.addEventListener('DOMContentLoaded', () => {
         // Inicio
         cargarCarritoDeLocalStorage();
         renderizarProductos();
-
 });

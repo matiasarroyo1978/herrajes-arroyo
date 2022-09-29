@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     timer: 1700,
                 });
                 //vaciarCarrito();
-                productosCarro = [];
+                carrito = [];
                 clearHtml();
                 // Borra LocalStorage
                 miLocalStorage.clear();
