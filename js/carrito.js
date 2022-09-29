@@ -221,7 +221,6 @@
             const resultado = dataProductos.filter((producto) =>
                 producto.nombre.toLocaleLowerCase().includes(busqueda.toLocaleLowerCase())
             );
-            console.log(resultado)
             if (resultado.length===0){
                 Swal.fire({
                     position: "center",
