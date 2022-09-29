@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let priceTotal = document.querySelector('#price-total')
         let containerBuyCart = document.querySelector('.lista-carrito');
         containerBuyCart.addEventListener('click', deleteProduct);
-        
+        const finalizarCompra = document.querySelector('.finalizar-compra');
         function renderizarProductos() {
            
             bisagras.forEach((info) => {
@@ -160,6 +160,30 @@ document.addEventListener('DOMContentLoaded', () => {
             
             });   
         }
+        finalizarCompra.addEventListener('click', cerrarCompra);
+
+        function cerrarCompra(e){
+            if (e.target.classList.contains('finalizar-compra')) {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "Compra Realizada. Muchas Gracias.",
+                    showConfirmButton: false,
+                    timer: 1700,
+                });
+                //vaciarCarrito();
+                productosCarro = [];
+                clearHtml();
+                // Borra LocalStorage
+                miLocalStorage.clear();
+                totalCard = 0;
+                countProduct = 0;
+                amountProduct.innerHTML = countProduct;
+                priceTotal.innerHTML = totalCard;
+            
+                guardarCarritoEnLocalStorage();
+            }
+        }    
         function addProduct(e){
             e.preventDefault();
             if (e.target.classList.contains('btn-add-cart')) {
