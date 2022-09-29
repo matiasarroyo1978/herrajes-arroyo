@@ -1,225 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    //Variables
-        const cerraduras = [
-            {
-                id: 1,
-                nombre: 'Kallay 5002',
-                imagen:'../images/JPG/k5002.jpg',
-                descripcion: 'CERRADURA DE SEGURIDAD KALLAY MODELO 5002 PARA PORTON O PUERTA CORREDIZA PARANTE ANGOSTO 40MM.',
-                precio: 5900,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 2,
-                nombre: 'Kallay 5006',
-                imagen:'../images/JPG/k5006.jpg',
-                descripcion: 'CERRADURA DE SEGURIDAD KALLAY MODELO 5006 PARA PARANTE ANGOSTO 40MM.',
-                precio: 5900,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 3,
-                nombre: 'Kallay 5003',
-                imagen:'../images/JPG/k5003.jpg',
-                descripcion: 'CERRADURA DE SEGURIDAD KALLAY MODELO 5003 PARA PUERTAS VAIVEN PARANTE ANGOSTO 40MM.',
-                precio: 5900,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 4,
-                nombre: 'Kallay 4000',
-                imagen:'../images/JPG/k4000.jpg',
-                descripcion: 'CERRADURA DE SEGURIDAD KALLAY MODELO 4000 CON 6 PLAQUETAS ACERO INOXIDABLE DOBLE PERNO.',
-                precio: 5300,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 5,
-                nombre: 'Kallay 4007',
-                imagen:'../images/JPG/k4007.jpg',
-                descripcion: 'CERRADURA DE SEGURIDAD KALLAY MODELO 4007 CON 6 PLAQUETAS ACERO INOXIDABLE PARA PUERTAS CONSORCIO.',
-                precio: 5900,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 6,
-                nombre: 'Kallay 4008',
-                imagen:'../images/JPG/k4008.jpg',
-                descripcion: 'CERRADURA DE SEGURIDAD KALLAY MODELO 4008 CON 6 PLAQUETAS ACERO INOXIDABLE Y 3 PERNOS GIRATORIOS DE ACERO.',
-                precio: 5900,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 7,
-                nombre: 'Kallay 4002',
-                imagen:'../images/JPG/k4002.jpg',
-                descripcion: 'CERRADURA DE SEGURIDAD MEDIANA KALLAY MODELO 4002 CON 4 PLAQUETAS ACERO Y DOBLE PERNO.',
-                precio: 4300,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 8,
-                nombre: 'Kallay 4003',
-                imagen:'../images/JPG/k4003.jpg',
-                descripcion: 'CERRADURA DE SEGURIDAD MEDIANA KALLAY MODELO 4003 CON 4 PLAQUETAS ACERO Y PERNO RECTANGULAR.',
-                precio: 4300,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 9,
-                nombre: 'Kallay 4005',
-                imagen:'../images/JPG/k4005.jpg',
-                descripcion: 'CERRADURA DE SEGURIDAD CHICA FRENTE ANGOSTO KALLAY MODELO 4005 CON 4 PLAQUETAS ACERO.',
-                precio: 3300,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 10,
-                nombre: 'Kallay 4006',
-                imagen:'../images/JPG/k4006.jpg',
-                descripcion: 'CERRADURA DE SEGURIDAD CHICA FRENTE ANCHO KALLAY MODELO 4006 CON 4 PLAQUETAS ACERO.',
-                precio: 3300,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 11,
-                nombre: 'Kallay 3002',
-                imagen:'../images/JPG/k3002.jpg',
-                descripcion: 'CERRADURA DE SEGURIDAD CHICA PARA PARANTES ANGOSTOS KALLAY MODELO 3002 CON 4 PLAQUETAS ACERO.',
-                precio: 3300,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 12,
-                nombre: 'Kallay 503',
-                imagen:'../images/JPG/k503.jpg',
-                descripcion: 'CERRADURA PARA PUERTAS DE INTERIOR FRENTE ANGOSTO KALLAY MODELO 503.',
-                precio: 1750,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 13,
-                nombre: 'Kallay 507',
-                imagen:'../images/JPG/k507.jpg',
-                descripcion: 'CERRADURA PARA PUERTAS DE INTERIOR CORREDIZA KALLAY MODELO 507.',
-                precio: 3300,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 14,
-                nombre: 'Kallay 517',
-                imagen:'../images/JPG/k517.jpg',
-                descripcion: 'CERROJO PARA PUERTAS DE INTERIOR CORREDIZO KALLAY MODELO 517.',
-                precio: 2900,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 15,
-                nombre: 'Kallay 4010',
-                imagen:'../images/JPG/k4010.jpg',
-                descripcion: 'CERROJO PARA PUERTAS DE EXTERIOR CON 6 PLAQUETAS DE ACERO INOXIDABLE KALLAY MODELO 4010.',
-                precio: 3800,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 16,
-                nombre: 'Kallay 4015',
-                imagen:'../images/JPG/k4015.jpg',
-                descripcion: 'CERROJO PARA PUERTAS CORREDIZAS DE EXTERIOR CON 6 PLAQUETAS DE ACERO INOXIDABLE KALLAY MODELO 4015.',
-                precio: 5500,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 17,
-                nombre: 'Candex 101',
-                imagen:'../images/JPG/101_Candex.jpg',
-                descripcion: 'CERRADURA CANDEX 101 CON 6 PLAQUETAS DE BRONCE DOBLE PERNO.',
-                precio: 7500,
-                stock: 20,
-                cantidad : 0,
-            },
-           {
-                id: 18,
-                nombre: 'Candex 115',
-                imagen:'../images/JPG/115_Candex.jpg',
-                descripcion: 'CERRADURA CANDEX 115 FRENTE ANCHO HIERRO NIQUELADO PERNO RECTANGULAR.',
-                precio: 3500,
-                stock: 20,
-                cantidad : 0,
-            },   
-           {
-                id: 19,
-                nombre: 'Candex 116',
-                imagen:'../images/JPG/116_Candex.jpg',
-                descripcion: 'CERRADURA CANDEX 116 FRENTE ANGOSTO HIERRO NIQUELADO PERNO RECTANGULAR.',
-                precio: 3500,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 20,
-                nombre: 'Candex 117',
-                imagen:'../images/JPG/117_Candex.jpg',
-                descripcion: 'CERRADURA CANDEX 117 MEDIANA FRENTE ANCHO HIERRO NIQUELADO PERNO RECTANGULAR.',
-                precio: 4500,
-                stock: 20,
-                cantidad : 0,
-            },
-            {
-                id: 21,
-                nombre: 'Candex 117 D/Perno',
-                imagen:'../images/JPG/117_Candex_red.jpg',
-                descripcion: 'CERRADURA CANDEX 117 MEDIANA DOBLE PERNO.',
-                precio: 4500,
-                stock: 20,
-                cantidad : 0,
-            },  
-            {
-                id: 22,
-                nombre: 'Candex 124',
-                imagen:'../images/JPG/124_Candex.jpg',
-                descripcion: 'CERRADURA CANDEX 124 FRENTE ANCHO HIERRO NIQUELADO PERNO RECTANGULAR.',
-                precio: 3000,
-                stock: 20,
-                cantidad : 0,
-            },  
-            {
-                id: 23,
-                nombre: 'Candex 125',
-                imagen:'../images/JPG/125_Candex.jpg',
-                descripcion: 'CERRADURA CANDEX 125 FRENTE ANGOSTO HIERRO NIQUELADO PERNO RECTANGULAR.',
-                precio: 3000,
-                stock: 20,
-                cantidad : 0,
-            },  
-            {
-                id: 24,
-                nombre: 'Candex 123',
-                imagen:'../images/JPG/123-Candex.jpg',
-                descripcion: 'CERRADURA CANDEX 123 PARA PUERTAS Y PORTONES CORREDIZOS.',
-                precio: 4900,
-                stock: 20,
-                cantidad : 0,
-            },
-        ];       
-        
-        let carrito = [];
+        let productosCarro=[];
         const DOMitems = document.querySelector('#productos');
         const DOMbotonVaciar = document.querySelector('.btn-danger');
         const miLocalStorage = window.localStorage;
@@ -229,11 +8,33 @@ document.addEventListener('DOMContentLoaded', () => {
         let priceTotal = document.querySelector('#price-total')
         let containerBuyCart = document.querySelector('.lista-carrito');
         containerBuyCart.addEventListener('click', deleteProduct);
-        //let searchItems = document.querySelector(".search");   
+        const carro = document.querySelector("#carrito");
+        let dataProductos;
 
-        function renderizarProductos() {
+        document.addEventListener('DOMContentLoaded', () => {
+   
+           productosCarro = JSON.parse(localStorage.getItem("carro")) || [];
+            
+        /*--------------   Llamada a BD local con Fetch - Async Function   ---------------*/
+            cargarBd();
+        });
+
+        async function consultarBd() {
+                const resultado = await fetch("/js/productos.json");
+                let datos = await resultado.json();
+                dataProductos = datos;
+                renderizarProductos(dataProductos);
+        }
+            
+        function cargarBd() {
+                consultarBd();
+                
+        }
         
-            cerraduras.forEach((info) => {
+
+
+        function renderizarProductos(productos) {
+            productos.forEach((info) => {
                 // Estructura
                 const miNodoCard = document.createElement('div');
                 miNodoCard.classList.add('card');
@@ -300,19 +101,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 const deleteId = e.target.getAttribute('data-id');
         
-                carrito.forEach(value => {
+                productosCarro.forEach(value => {
                     if (value.id == deleteId) {
                         let priceReduce = parseInt(value.precio) * parseInt(value.cantidad);
                         totalCard =  totalCard - priceReduce;
                         totalCard = totalCard.toFixed(2);
                     }
                 });
-                carrito = carrito.filter(product => product.id !== deleteId);
+                productosCarro = productosCarro.filter(product => product.id !== deleteId);
                 
                 countProduct--;
                 guardarCarritoEnLocalStorage();
             }
-            if (carrito.length === 0) {
+            if (productosCarro.length === 0) {
                 priceTotal.innerHTML = 0;
                 amountProduct.innerHTML = 0;
                 guardarCarritoEnLocalStorage();
@@ -336,9 +137,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }    
             totalCard = parseInt(totalCard) + parseInt(infoProduct.precio);
-            const exist = carrito.some(product => product.id === infoProduct.id);
+            const exist = productosCarro.some(product => product.id === infoProduct.id);
             if (exist) {
-                const pro = carrito.map(product => {
+                const pro = productosCarro.map(product => {
                     if (product.id === infoProduct.id) {
                         product.cantidad++;
                         countProduct++;                      
@@ -348,9 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     
                 });
-                carrito = [...pro];
+                productosCarro= [...pro];
             } else {
-                carrito = [...carrito, infoProduct]
+                productosCarro = [...productosCarro, infoProduct]
                 countProduct++;
             }
             comprobar();
@@ -360,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
         function loadHtml(){
             clearHtml();
             countProduct=0;
-            carrito.forEach(product => {
+            productosCarro.forEach(product => {
                 const {nombre, precio, cantidad, id} = product;
                 const row = document.createElement('thead');
                 row.innerHTML = `
@@ -384,7 +185,23 @@ document.addEventListener('DOMContentLoaded', () => {
         function clearHtml(){
             containerBuyCart.innerHTML = '';
             }
-        
+        // function filtrarProductos(e) {
+        //         e.preventDefault();
+            
+        //         const busqueda = $("#buscador").val();
+            
+        //         const resultado = cerraduras.filter((producto) =>
+        //             producto.nombre.toLocaleLowerCase().includes(busqueda.toLocaleLowerCase())
+        //         );
+            
+        //         limpiarProductos();
+        //         renderizarProductos(resultado);
+        // }
+        // function limpiarProductos() {
+        //     while (cerraduras.firstChild) {
+        //         cerraduras.removeChild(listaProductos.firstChild);
+        //     }
+        // }
         // searchItems.addEventListener("input", (e) => {
         //         //search items
         //         let search = e.target.value;
@@ -413,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 timer: 1700,
             });
             // Limpiamos los productos guardados
-            carrito = [];
+            productosCarro = [];
             // Renderizamos los cambios
             clearHtml();
             // Borra LocalStorage
@@ -427,26 +244,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     
         function guardarCarritoEnLocalStorage () {
-                miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+                miLocalStorage.setItem('carro', JSON.stringify(productosCarro));
             
             
         }
     
         function cargarCarritoDeLocalStorage () {
             // ¿Existe un carrito previo guardado en LocalStorage?
-            if (miLocalStorage.getItem('carrito') !== null) {
+            if (miLocalStorage.getItem('carro') !== null) {
                 // Carga la información
-                carrito = JSON.parse(miLocalStorage.getItem('carrito'));
-                for (let i=0;i<carrito.length;i++){
-                    if (carrito[i].cantidad > 1){
-                        subTotal = carrito[i].precio * carrito[i].cantidad;
+                productosCarro = JSON.parse(miLocalStorage.getItem('carro'));
+                for (let i=0;i<productosCarro.length;i++){
+                    if (productosCarro[i].cantidad > 1){
+                        subTotal = productosCarro[i].precio * productosCarro[i].cantidad;
                         totalCard = parseInt(totalCard) + parseInt(subTotal);
-                    } else totalCard = parseInt(totalCard) + parseInt(carrito[i].precio);
-                           countProduct = carrito.length;
+                    } else totalCard = parseInt(totalCard) + parseInt(productosCarro[i].precio);
+                           countProduct = productosCarro.length;
                 }
                 priceTotal.innerHTML = totalCard;
                 loadHtml();
-            }else carrito=[];
+            }else productosCarro=[];
                   loadHtml();   
                 
             }
@@ -458,7 +275,8 @@ document.addEventListener('DOMContentLoaded', () => {
         DOMbotonVaciar.addEventListener('click', vaciarCarrito);
         // Inicio
         cargarCarritoDeLocalStorage();
-        renderizarProductos();
+        
+        
     
         
-});  
+ 
