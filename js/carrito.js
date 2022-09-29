@@ -23,7 +23,7 @@
         });
 
         async function consultarBd() {
-                const resultado = await fetch("/js/productos.json");
+                const resultado = await fetch("/js/cerraduras.json");
                 let datos = await resultado.json();
                 dataProductos = datos;
                 renderizarProductos(dataProductos);
