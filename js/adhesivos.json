@@ -1,0 +1,101 @@
+[
+    {
+        "id": "78",
+        "nombre": "Cola Vinìlica 1/4 Kg",
+        "imagen": "../images/JPG/adhesivo.jpg",
+        "descripcion": "COLA VINÌLICA A-20 x 1/4 KG.",
+        "precio": "350",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "79",
+        "nombre": "Cola Vinìlica 1/2 Kg",
+        "imagen": "../images/JPG/adhesivo.jpg",
+        "descripcion": "COLA VINÌLICA A-20 x 1/2 KG.",
+        "precio": "650",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "80",
+        "nombre": "Cola Vinìlica 1 Kg",
+        "imagen": "../images/JPG/adhesivo.jpg",
+        "descripcion": "COLA VINÌLICA A-20 x 1 KG",
+        "precio": "1150",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "81",
+        "nombre": "Cola Vinìlica 6 Kg",
+        "imagen": "../images/JPG/adhesivo.jpg",
+        "descripcion": "COLA VINÌLICA A-20 x 6 KG",
+        "precio": "6100",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "81",
+        "nombre": "Cola Vinìlica 24 Kg",
+        "imagen": "../images/JPG/adhesivo.jpg",
+        "descripcion": "COLA VINÌLICA A-20 x 24 KG",
+        "precio": "23000",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "82",
+        "nombre": "Cemento Contacto 1/8 kg",
+        "imagen": "../images/JPG/cemento.jpg",
+        "descripcion": "CEMENTO CONTACTO 101 X 1/8 KG.",
+        "precio": "450",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "83",
+        "nombre": "Cemento Contacto 1/4 kg",
+        "imagen": "../images/JPG/cemento.jpg",
+        "descripcion": "CEMENTO CONTACTO 101 X 1/4 KG.",
+        "precio": "800",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "84",
+        "nombre": "Cemento Contacto 1/2 kg",
+        "imagen": "../images/JPG/cemento.jpg",
+        "descripcion": "CEMENTO CONTACTO 101 X 1/2 KG.",
+        "precio": "1250",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "85",
+        "nombre": "Cemento Contacto 1 kg",
+        "imagen": "../images/JPG/cemento.jpg",
+        "descripcion": "CEMENTO CONTACTO 101 X 1 KG.",
+        "precio": "1900",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "86",
+        "nombre": "Cemento Contacto 4 kg",
+        "imagen": "../images/JPG/cemento.jpg",
+        "descripcion": "CEMENTO CONTACTO 101 X 4 KG",
+        "precio": "7400",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "87",
+        "nombre": "Cola Vinìlica X36",
+        "imagen": "../images/JPG/x36.jpg",
+        "descripcion": "COLA VINÌLICA X-36 x 1 KG",
+        "precio": "1480",
+        "stock": "20",
+        "cantidad": "0"
+      }
+]
