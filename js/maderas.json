@@ -1,0 +1,110 @@
+[
+    {
+        "id": "66",
+        "nombre": "Tirante 3x6 Cepillado",
+        "imagen": "../images/JPG/3x6.webp",
+        "descripcion": "TIRANTE 3X6 CEPILLADO 5,50 MTS.",
+        "precio": "6500",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "67",
+        "nombre": "Tirante 2x6 Cepillado",
+        "imagen": "../images/JPG/2x6().jpg",
+        "descripcion": "TIRANTE 2X6 CEPILLADO 4,20 MTS.",
+        "precio": "2700",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "68",
+        "nombre": "Machimbre 1/2 pulgada",
+        "imagen": "../images/JPG/machimbre-media.jpg",
+        "descripcion": "MACHIMBRE 1/2 PULGADA PRIMERA",
+        "precio": "1250 MT2",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "69",
+        "nombre": "Machimbre 3/4 pulgada",
+        "imagen": "../images/JPG/machimbre-3.jpg",
+        "descripcion": "MACHIMBRE 3/4 PULGADA PRIMERA",
+        "precio": "1950 MT2",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "70",
+        "nombre": "Machimbre 1 pulgada",
+        "imagen": "../images/JPG/machimbre-1.jpg",
+        "descripcion": "MACHIMBRE 1 PULGADA PRIMERA",
+        "precio": "2500 MT2",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "71",
+        "nombre": "Tablero liston corrido",
+        "imagen": "../images/JPG/tablero.liston.jpg",
+        "descripcion": "TABLERO LISTON CORRIDO 18 MM.",
+        "precio": "6500",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "72",
+        "nombre": "Tablero Clear",
+        "imagen": "../images/JPG/tablero-clear.jpg",
+        "descripcion": "TABLERO FINGER CLEAR 22 MM.",
+        "precio": "9500",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "73",
+        "nombre": "Tirante 3x6 multilaminado",
+        "imagen": "../images/JPG/3x6-finger.webp",
+        "descripcion": "TITANTE 3X6 MULTILAMINADO 12 MTS. LARGO",
+        "precio": "27000",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "74",
+        "nombre": "Viga 3x8 multilaminada",
+        "imagen": "../images/JPG/viga3x8.webp",
+        "descripcion": "VIGA 3X8 MULTILAMINADA 12 MTS. LARGO",
+        "precio": "36000",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "75",
+        "nombre": "Viga 3x10 multilaminada",
+        "imagen": "../images/JPG/viga3x10.jpg",
+        "descripcion": "VIGA 3X10 MULTILMINADA 12 MTS. LARGO",
+        "precio": "45000",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "76",
+        "nombre": "Viga 4x8 multilaminada",
+        "imagen": "../images/JPG/viga4x8.jpg",
+        "descripcion": "VIGA 4X8 MULTILMINADA 12 MTS. LARGO",
+        "precio": "47500",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "77",
+        "nombre": "Viga 4x10 multilaminada",
+        "imagen": "../images/JPG/viga4x10.webp",
+        "descripcion": "VIGA 4X10 MULTILMINADA 12 MTS. LARGO",
+        "precio": "59500",
+        "stock": "20",
+        "cantidad": "0"
+      }
+]

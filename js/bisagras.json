@@ -1,0 +1,101 @@
+[
+    {
+        "id": "44",
+        "nombre": "Bisagra T/mun.",
+        "imagen":"../images/JPG/Bisagra_Municion_100.JPG",
+        "descripcion": "BISAGRA TIPO MUNICIÓN 4 PULGADAS",
+        "precio": "450",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "45",
+        "nombre": "Bisagra T/mun.",
+        "imagen":"../images/JPG/bisagra-tip-3.webp",
+        "descripcion": "BISAGRA TIPO MUNICIÓN 3 PULGADAS.",
+        "precio": "350",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "46",
+        "nombre": "Bisagra Ficha",
+        "imagen":"../images/JPG/Bisagra_2x3.JPG",
+        "descripcion": "BISAGRA FICHA 3 AGUJEROS.",
+        "precio": "180",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "47",
+        "nombre": "Bisagra Soldar",
+        "imagen":"../images/JPG/Bisagra_Municion_Ala_corta.JPG",
+        "descripcion": "BISAGRA TIPO MUNICIÓN PARA SOLDAR 4 PULGADAS.",
+        "precio": "340",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "48",
+        "nombre": "Bisagra Soldar",
+        "imagen":"../images/JPG/Bisagra_Municion_Ala_corta.JPG",
+        "descripcion": "BISAGRA TIPO MUNICIÓN PARA SOLDAR 3 PULGADAS.",
+        "precio": "280",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "49",
+        "nombre": "Ficha Muebles",
+        "imagen":"../images/JPG/Bisagra_ficha_63.JPG",
+        "descripcion": "BISAGRA FICHA PARA MUEBLES.",
+        "precio": "75",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "50",
+        "nombre": "Bisagra Mosquera",
+        "imagen":"../images/JPG/Bisagra_Mosquera.jpg",
+        "descripcion": "BISAGRA PARA MOSQUITEROS.",
+        "precio": "250",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "51",
+        "nombre": "Pasador Palanca",
+        "imagen":"../images/JPG/pasador_a_palanca.jpg",
+        "descripcion": "PASADOR DE EMBUTIR A PALANCA PARA PUERTAS DE MADERA.",
+        "precio": "650",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "52",
+        "nombre": "Pasador Embutir Herrero",
+        "imagen":"../images/JPG/PASADOR_PUERTA_CAJÓN.jpg",
+        "descripcion": "PASADOR DE EMBUTIR A PALANCA PARA CARPINTERÍA METÁLICA.",
+        "precio": "750",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "53",
+        "nombre": "Bisagra Munición",
+        "imagen":"../images/JPG/Municion-100x75x3.jpeg",
+        "descripcion": "BISAGRA MUNICIÓN 4 PULGADAS.",
+        "precio": "1300",
+        "stock": "20",
+        "cantidad" : "0"
+    },
+    {
+        "id": "54",
+        "nombre": "Bisagra Munición",
+        "imagen":"../images/JPG/MUNICION-78X78X3.jpg",
+        "descripcion": "BISAGRA MUNICIÓN 3 PULGADAS.",
+        "precio": "1200",
+        "stock": "20",
+        "cantidad" : "0"
+    }
+]

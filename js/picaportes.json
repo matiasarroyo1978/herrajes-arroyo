@@ -1,0 +1,101 @@
+[
+    {
+        "id": "55",
+        "nombre": "Manija Biselada",
+        "imagen": "../images/JPG/manija-biselada.jpeg",
+        "descripcion": "MANIJA BISELADA REFORZADA BRONCE",
+        "precio": "2800",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "56",
+        "nombre": "Manija Pampa",
+        "imagen": "../images/JPG/manija-pampa.jpeg",
+        "descripcion": "MANIJA PAMPA BRONCE",
+        "precio": "5500",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "57",
+        "nombre": "Manija Trocadero",
+        "imagen": "../images/JPG/manija-trocadero.jpeg",
+        "descripcion": "MANIJA TROCADERO BRONCE.",
+        "precio": "12000",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "58",
+        "nombre": "Manija Hera",
+        "imagen": "../images/JPG/manija-hera.jpeg",
+        "descripcion": "MANIJA HERA BRONCE.",
+        "precio": "12500",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "59",
+        "nombre": "Manijon Recto",
+        "imagen": "../images/JPG/manijon-recto.jpeg",
+        "descripcion": "MANIJON RECTO BRONCE",
+        "precio": "4800",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "60",
+        "nombre": "Manijon Sanatorio",
+        "imagen": "../images/JPG/manijon-sanatorio.jpeg",
+        "descripcion": "MANIJON SANATORIO BRONCE",
+        "precio": "6000",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "61",
+        "nombre": "Manijon Hera",
+        "imagen": "../images/JPG/manijon-hera.jpeg",
+        "descripcion": "MANIJON HERA BRONCE",
+        "precio": "14500",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "62",
+        "nombre": "Manijon Trocadero",
+        "imagen": "../images/JPG/manijon-trocadero.jpeg",
+        "descripcion": "MANIJON TROCADERO BRONCE.",
+        "precio": "14500",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "63",
+        "nombre": "Pomela Bronce",
+        "imagen": "../images/JPG/pomela-bronce.jpeg",
+        "descripcion": "POMELA BRONCE 160MM.",
+        "precio": "2000",
+        "stock": "20",
+        "cantidad": "0"
+      },
+      {
+        "id": "64",
+        "nombre": "Pomela Bronce",
+        "imagen": "../images/JPG/pomela-bronce.jpeg",
+        "descripcion": "POMELA BRONCE 140MM.",
+        "precio": 1800,
+        "stock": 20,
+        "cantidad": "0"
+      },
+      {
+        "id": "65",
+        "nombre": "Pomela Bronce",
+        "imagen": "../images/JPG/pomela-bronce.jpeg",
+        "descripcion": "POMELA BRONCE 110MM.",
+        "precio": "1600",
+        "stock": "20",
+        "cantidad": "0"
+      }
+]

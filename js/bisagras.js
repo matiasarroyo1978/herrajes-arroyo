@@ -1,107 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let bisagras = [
-        {
-            id: 44,
-            nombre: 'Bisagra T/mun.',
-            imagen:'../images/JPG/Bisagra_Municion_100.JPG',
-            descripcion: 'BISAGRA TIPO MUNICIÓN 4 PULGADAS',
-            precio: 450,
-            stock: 20,
-            cantidad : 0,
-        },
-        {
-            id: 45,
-            nombre: 'Bisagra T/mun.',
-            imagen:'../images/JPG/bisagra-tip-3.webp',
-            descripcion: 'BISAGRA TIPO MUNICIÓN 3 PULGADAS.',
-            precio: 350,
-            stock: 20,
-            cantidad : 0,
-        },
-        {
-            id: 46,
-            nombre: 'Bisagra Ficha',
-            imagen:'../images/JPG/Bisagra_2x3.JPG',
-            descripcion: 'BISAGRA FICHA 3 AGUJEROS.',
-            precio: 180,
-            stock: 20,
-            cantidad : 0,
-        },
-        {
-            id: 47,
-            nombre: 'Bisagra Soldar',
-            imagen:'../images/JPG/Bisagra_Municion_Ala_corta.JPG',
-            descripcion: 'BISAGRA TIPO MUNICIÓN PARA SOLDAR 4 PULGADAS.',
-            precio: 340,
-            stock: 20,
-            cantidad : 0,
-        },
-        {
-            id: 48,
-            nombre: 'Bisagra Soldar',
-            imagen:'../images/JPG/Bisagra_Municion_Ala_corta.JPG',
-            descripcion: 'BISAGRA TIPO MUNICIÓN PARA SOLDAR 3 PULGADAS.',
-            precio: 280,
-            stock: 20,
-            cantidad : 0,
-        },
-        {
-            id: 49,
-            nombre: 'Ficha Muebles',
-            imagen:'../images/JPG/Bisagra_ficha_63.JPG',
-            descripcion: 'BISAGRA FICHA PARA MUEBLES.',
-            precio: 75,
-            stock: 20,
-            cantidad : 0,
-        },
-        {
-            id: 50,
-            nombre: 'Bisagra Mosquera',
-            imagen:'../images/JPG/Bisagra_Mosquera.jpg',
-            descripcion: 'BISAGRA PARA MOSQUITEROS.',
-            precio: 250,
-            stock: 20,
-            cantidad : 0,
-        },
-        {
-            id: 51,
-            nombre: 'Pasador Palanca',
-            imagen:'../images/JPG/pasador_a_palanca.jpg',
-            descripcion: 'PASADOR DE EMBUTIR A PALANCA PARA PUERTAS DE MADERA.',
-            precio: 650,
-            stock: 20,
-            cantidad : 0,
-        },
-        {
-            id: 52,
-            nombre: 'Pasador Embutir Herrero',
-            imagen:'../images/JPG/PASADOR_PUERTA_CAJÓN.jpg',
-            descripcion: 'PASADOR DE EMBUTIR A PALANCA PARA CARPINTERÍA METÁLICA.',
-            precio: 750,
-            stock: 20,
-            cantidad : 0,
-        },
-        {
-            id: 53,
-            nombre: 'Bisagra Munición',
-            imagen:'../images/JPG/Municion-100x75x3.jpeg',
-            descripcion: 'BISAGRA MUNICIÓN 4 PULGADAS.',
-            precio: 1300,
-            stock: 20,
-            cantidad : 0,
-        },
-        {
-            id: 54,
-            nombre: 'Bisagra Munición',
-            imagen:'../images/JPG/MUNICION-78X78X3.jpg',
-            descripcion: 'BISAGRA MUNICIÓN 3 PULGADAS.',
-            precio: 1200,
-            stock: 20,
-            cantidad : 0,
-        },
-    ];
-
-    let carrito = [];
+let productosCarro=[];
         const DOMitems = document.querySelector('#productos');
         const DOMbotonVaciar = document.querySelector('.btn-danger');
         const miLocalStorage = window.localStorage;
@@ -111,10 +8,60 @@ document.addEventListener('DOMContentLoaded', () => {
         let priceTotal = document.querySelector('#price-total')
         let containerBuyCart = document.querySelector('.lista-carrito');
         containerBuyCart.addEventListener('click', deleteProduct);
+        const carro = document.querySelector("#carrito");
+        let dataProductos;
         const finalizarCompra = document.querySelector('.finalizar-compra');
-        function renderizarProductos() {
-           
-            bisagras.forEach((info) => {
+        $("#formulario").on("submit", filtrarProductos);
+        const listaProductos = document.querySelector("#productos");
+
+        document.addEventListener('DOMContentLoaded', () => {
+   
+           productosCarro = JSON.parse(localStorage.getItem("carro")) || [];
+            
+        /*--------------   Llamada a BD local con Fetch - Async Function   ---------------*/
+            cargarBd();
+        });
+
+        async function consultarBd() {
+                const resultado = await fetch("/js/bisagras.json");
+                let datos = await resultado.json();
+                dataProductos = datos;
+                renderizarProductos(dataProductos);
+        }
+            
+        function cargarBd() {
+                consultarBd();
+                
+        }
+        
+
+        finalizarCompra.addEventListener('click', cerrarCompra);
+
+        function cerrarCompra(e){
+            if (e.target.classList.contains('finalizar-compra')) {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "Compra Realizada. Muchas Gracias.",
+                    showConfirmButton: false,
+                    timer: 1700,
+                });
+                //vaciarCarrito();
+                productosCarro = [];
+                clearHtml();
+                // Borra LocalStorage
+                miLocalStorage.clear();
+                totalCard = 0;
+                countProduct = 0;
+                amountProduct.innerHTML = countProduct;
+                priceTotal.innerHTML = totalCard;
+            
+                guardarCarritoEnLocalStorage();
+            }
+        }    
+
+        function renderizarProductos(productos) {
+            productos.forEach((info) => {
                 // Estructura
                 const miNodoCard = document.createElement('div');
                 miNodoCard.classList.add('card');
@@ -160,31 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             });   
         }
-        finalizarCompra.addEventListener('click', cerrarCompra);
-
-        function cerrarCompra(e){
-            if (e.target.classList.contains('finalizar-compra')) {
-                Swal.fire({
-                    position: "center",
-                    icon: "success",
-                    title: "Compra Realizada. Muchas Gracias.",
-                    showConfirmButton: false,
-                    timer: 1700,
-                });
-                //vaciarCarrito();
-                carrito = [];
-            // Renderizamos los cambios
-            clearHtml();
-            // Borra LocalStorage
-            miLocalStorage.clear();
-            totalCard = 0;
-            countProduct = 0;
-            amountProduct.innerHTML = countProduct;
-            priceTotal.innerHTML = totalCard;
-           
-            guardarCarritoEnLocalStorage();
-            }
-        }    
+      
         function addProduct(e){
             e.preventDefault();
             if (e.target.classList.contains('btn-add-cart')) {
@@ -205,19 +128,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 const deleteId = e.target.getAttribute('data-id');
         
-                carrito.forEach(value => {
+                productosCarro.forEach(value => {
                     if (value.id == deleteId) {
                         let priceReduce = parseInt(value.precio) * parseInt(value.cantidad);
                         totalCard =  totalCard - priceReduce;
                         totalCard = totalCard.toFixed(2);
                     }
                 });
-                carrito = carrito.filter(product => product.id !== deleteId);
+                productosCarro = productosCarro.filter(product => product.id !== deleteId);
                 
                 countProduct--;
                 guardarCarritoEnLocalStorage();
             }
-            if (carrito.length === 0) {
+            if (productosCarro.length === 0) {
                 priceTotal.innerHTML = 0;
                 amountProduct.innerHTML = 0;
                 guardarCarritoEnLocalStorage();
@@ -241,9 +164,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }    
             totalCard = parseInt(totalCard) + parseInt(infoProduct.precio);
-            const exist = carrito.some(product => product.id === infoProduct.id);
+            const exist = productosCarro.some(product => product.id === infoProduct.id);
             if (exist) {
-                const pro = carrito.map(product => {
+                const pro = productosCarro.map(product => {
                     if (product.id === infoProduct.id) {
                         product.cantidad++;
                         countProduct++;                      
@@ -253,9 +176,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     
                 });
-                carrito = [...pro];
+                productosCarro= [...pro];
             } else {
-                carrito = [...carrito, infoProduct]
+                productosCarro = [...productosCarro, infoProduct]
                 countProduct++;
             }
             comprobar();
@@ -265,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
         function loadHtml(){
             clearHtml();
             countProduct=0;
-            carrito.forEach(product => {
+            productosCarro.forEach(product => {
                 const {nombre, precio, cantidad, id} = product;
                 const row = document.createElement('thead');
                 row.innerHTML = `
@@ -288,12 +211,42 @@ document.addEventListener('DOMContentLoaded', () => {
         }   
         function clearHtml(){
             containerBuyCart.innerHTML = '';
+        }
+
+        function filtrarProductos(e) {
+            e.preventDefault();
+        
+            const busqueda = $("#buscador").val();
+        
+            const resultado = dataProductos.filter((producto) =>
+                producto.nombre.toLocaleLowerCase().includes(busqueda.toLocaleLowerCase())
+            );
+            if (resultado.length===0){
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "Producto no Encontrado",
+                    showConfirmButton: false,
+                    timer: 1700,
+                });
+            }else limpiarProductos();
+                  renderizarProductos(resultado);
+        }
+        function limpiarCarrito() {
+            while (containerBuyCart.firstChild) {
+                containerBuyCart.removeChild(containerBuyCart.firstChild);
             }
+        }
         
-        
+        function limpiarProductos() {
+            while (listaProductos.firstChild) {
+                listaProductos.removeChild(listaProductos.firstChild);
+            }
+        }
         /**
         * Vacia el carrito y vuelve a dibujarlo
         */
+
         function vaciarCarrito() {
             Swal.fire({
                 position: "center",
@@ -303,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 timer: 1700,
             });
             // Limpiamos los productos guardados
-            carrito = [];
+            productosCarro = [];
             // Renderizamos los cambios
             clearHtml();
             // Borra LocalStorage
@@ -312,31 +265,31 @@ document.addEventListener('DOMContentLoaded', () => {
             countProduct = 0;
             amountProduct.innerHTML = countProduct;
             priceTotal.innerHTML = totalCard;
-           
+            
             guardarCarritoEnLocalStorage();
         }
     
         function guardarCarritoEnLocalStorage () {
-                miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+                miLocalStorage.setItem('carro', JSON.stringify(productosCarro));
             
             
         }
     
         function cargarCarritoDeLocalStorage () {
             // ¿Existe un carrito previo guardado en LocalStorage?
-            if (miLocalStorage.getItem('carrito') !== null) {
+            if (miLocalStorage.getItem('carro') !== null) {
                 // Carga la información
-                carrito = JSON.parse(miLocalStorage.getItem('carrito'));
-                for (let i=0;i<carrito.length;i++){
-                    if (carrito[i].cantidad > 1){
-                        subTotal = carrito[i].precio * carrito[i].cantidad;
+                productosCarro = JSON.parse(miLocalStorage.getItem('carro'));
+                for (let i=0;i<productosCarro.length;i++){
+                    if (productosCarro[i].cantidad > 1){
+                        subTotal = productosCarro[i].precio * productosCarro[i].cantidad;
                         totalCard = parseInt(totalCard) + parseInt(subTotal);
-                    } else totalCard = parseInt(totalCard) + parseInt(carrito[i].precio);
-                           countProduct = carrito.length;
+                    } else totalCard = parseInt(totalCard) + parseInt(productosCarro[i].precio);
+                           countProduct = productosCarro.length;
                 }
                 priceTotal.innerHTML = totalCard;
                 loadHtml();
-            }else carrito=[];
+            }else productosCarro=[];
                   loadHtml();   
                 
             }
@@ -348,5 +301,3 @@ document.addEventListener('DOMContentLoaded', () => {
         DOMbotonVaciar.addEventListener('click', vaciarCarrito);
         // Inicio
         cargarCarritoDeLocalStorage();
-        renderizarProductos();
-});
